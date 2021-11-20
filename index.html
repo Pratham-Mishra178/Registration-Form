@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>User Details</title>
+</head>
+<body>
+    
+    <div class="div1" style="
+    width: 100%;
+    padding: 20px;
+">
+        <div class="div2" style="
+    height: 80%;
+    min-width: 350px;
+    width: 100%;
+    max-width: 500px;
+    padding: 60px 50px;
+">
+            <div class="div3" style="
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    display: grid;
+    justify-content: stretch;
+    align-content: space-evenly;
+    gap: 15px;
+">
+                <div class="div4" style="
+    width: 100%;
+    margin-left: 0;
+    height: 3rem;
+">
+                    User-Details
+                <div class="sec" style="
+    margin-left: auto;
+    margin-right: 10px;
+">
+                <img src="images/moon.png" id="icon" style="
+    margin-left: 0;
+">
+                </div>
+                </div>
+                <div class="div5" style="
+    margin: 0;
+    width: 100%;
+    height: unset;
+    padding: 20px 10px;
+">
+                    <form style="
+    width: 100%;
+">
+                        <p>Name</p>
+                        <input type="text" name="username" placeholder="Enter your username">
+                        <p>Phone Number</p>
+                        <input type="email" name="email" placeholder="Enter your email-Id">
+                        <p>Registration Number</p>
+                        <input type="tel" name="phone" placeholder="Enter your Phone No.">
+                        <p>Date Of Birth</p>
+                        <input type="email" name="email" placeholder="Enter your email-Id">
+                        <p>Email</p>
+                        <input type="email" name="email" placeholder="Enter your email-Id">
+                        <p>Branch</p>
+                        <input type="tel" name="phone" placeholder="Enter your Phone No.">
+                        <p>Social Links</p>
+                        <input type="tel" name="phone" placeholder="Enter your Phone No.">
+                    </form>
+                </div>
+                <div class="div6_index" style="
+    margin: 0;
+    width: unset;
+    height: unset;
+">
+                    <button type="submit" onclick="" style="
+    /* width: 250px; */
+    height: 3rem;
+    margin: 0;
+">
+                        R E G I S T E R
+                    </button>
+                </div>
+            </div>
+            <footer>   
+            </div>        
+        </div>
+
+<script>
+var icon = document.getElementById("icon");
+
+icon.onclick = function(){
+    document.body.classList.toggle("dark-theme");
+    if( document.body.classList.contains("dark-theme")){
+        icon.src ="images/sun.png";
+    }else{
+        icon.src ="images/moon.png";
+    }
+    }
+</script>
+
+</body>
+</html>
