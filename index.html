@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <script src="main.js"></script>
     <title>User Details</title>
 </head>
 <body style="background-image: url(images/back.png);">
@@ -50,37 +51,37 @@
     height: unset;
     padding: 20px 10px;
 ">
-                    <form style="
+                    <form name="submition" style="
     width: 100%;
-">
+" onSubmit="return submitions_validation();">
                         <p>Name</p>
-                        <input type="text" name="username" placeholder="Enter your name">
+                        <input type="text" name="userid" placeholder="Enter your name">
                         <p>Phone Number</p>
                         <input type="tel" name="phone" placeholder="Enter your Phone No.">
                         <p>Registration Number</p>
-                        <input type="email" name="email" placeholder="Enter your registration number">
+                        <input type="text" name="regno" placeholder="Enter your registration number">
                         <p>Date Of Birth</p>
-                        <input type="email" name="email" placeholder="Enter your DOB">
+                        <input type="date" name="dob" placeholder="Enter your DOB">
                         <p>Email</p>
                         <input type="email" name="email" placeholder="Enter your email-Id">
                         <p>Branch</p>
-                        <input type="tel" name="phone" placeholder="Enter your branch">
+                        <input type="tel" name="bnc" placeholder="Enter your branch">
                         <p>Social Links</p>
-                        <input type="tel" name="phone" placeholder="Enter your social links">
-                    </form>
+                        <input type="tel" name="slinks" placeholder="Enter your social links">
+                    <!-- </form> -->
                 </div>
                 <div class="div6_index" style="
     margin: 0;
     width: unset;
     height: unset;
 ">
-                    <button type="submit" onclick="" style="
+                    <input class="button" type="submit" name="submit" value="R E G I S T E R" style="
     /* width: 250px; */
     height: 3rem;
     margin: 0;
-">
-                        R E G I S T E R
-                    </button>
+"/>
+                        
+                    </form>
                 </div>
             </div>
             <footer>   
