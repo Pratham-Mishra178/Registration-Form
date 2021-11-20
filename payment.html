@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <title>User Details</title>
+    <title>Payment</title>
 </head>
 <body>
     
@@ -34,7 +34,8 @@
     margin-left: 0;
     height: 3rem;
 ">
-                    User-Details
+                <a href="index.html">User-Details&nbsp</a>
+                > Payment
                 <div class="sec" style="
     margin-left: auto;
     margin-right: 10px;
@@ -44,47 +45,53 @@
 ">
                 </div>
                 </div>
-                <div class="div5" style="
+                <div class="div5_ver" style="
     margin: 0;
     width: 100%;
     height: unset;
     padding: 20px 10px;
 ">
-                    <form style="
+                    <form action="#" method="POST" style="
     width: 100%;
 ">
-                        <p>Username</p>
-                        <input type="text" name="username" placeholder="Enter your username" style="
-">
-                        <p>Email</p>
-                        <input type="email" name="email" placeholder="Enter your email-Id">
-                        <p>Phone No.</p>
-                        <input type="tel" name="phone" placeholder="Enter your Phone No.">
+                        <p>Select your UPI app</p>
+                        <select name="UPI" onChange="window.location.href=this.value" style="width: 100%;">
+                            <option disabled selected value style="display: none;">BHIM/UPI</option>
+                            <option value="payment.html">BHIM/UPI</option>
+                            <option value="Google Pay">Google Pay</option>
+                            <option value="Phone Pay">Phone Pay</option>
+                            <option value="Paytm">Paytm</option>
+                        </select>
+                        <p>Enter your UPI ID</p>
+                        <input type="text" name="UPI" placeholder="Ex- mobilenumber">
+                        <div class="pk">@upi</div>
+                        <p>Enter your Amount</p>
+                        <input type="text" name="Amount" placeholder="₹ Enter Amount">
                     </form>
                 </div>
-                <div class="div6_index" style="
+                <div class="div6_pay" style="
     margin: 0;
     width: unset;
     height: unset;
 ">
-                    <button type="submit" onclick="location.href='payment.html';" style="
+                    <button type="submit" onclick="location.href='verification.html';" style="
     /* width: 250px; */
     height: 3rem;
     margin: 0;
 ">
-                        C H E C K O U T
+                    P A Y
                     </button>
                 </div>
             </div>
             <footer>
                 <div class="div_img">
-                    <img src="images/footer.svg"/>
+                    <img src="images/footer.svg">
                 </div>
-            </footer>    
-            </div>        
+            </footer>  
         </div>
+    </div>
 
-<script>
+    <script>
 var icon = document.getElementById("icon");
 
 icon.onclick = function(){
